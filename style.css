@@ -31,7 +31,10 @@ body{
     width: 500px;
     height: 700px;
     overflow-y: auto;
+    scrollbar-width: none;
 }
+
+
 
 .header {
     text-align: center;
