@@ -1,0 +1,375 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Learning HTML: headings, paragraphs, lists",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Semantic HTML: article, section, nav, aside",
+      "completed": false
+    },
+    {
+      "id": "3",
+      "title": "Build a profile page (pure HTML)",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "title": "CSS Basics: selectors, specificity, cascade",
+      "completed": false
+    },
+    {
+      "id": "5",
+      "title": "Exercise: style the profile page with CSS",
+      "completed": false
+    },
+    {
+      "id": "6",
+      "title": "Layout: Flexbox fundamentals",
+      "completed": false
+    },
+    {
+      "id": "7",
+      "title": "Layout: CSS Grid fundamentals",
+      "completed": false
+    },
+    {
+      "id": "8",
+      "title": "Responsive Design: media queries",
+      "completed": false
+    },
+    {
+      "id": "9",
+      "title": "Accessibility: alt text, labels, focus order",
+      "completed": false
+    },
+    {
+      "id": "10",
+      "title": "Forms: inputs, validation hints",
+      "completed": false
+    },
+    {
+      "id": "11",
+      "title": "JavaScript Basics: variables, types, functions",
+      "completed": false
+    },
+    {
+      "id": "12",
+      "title": "DOM Manipulation: query, create, update",
+      "completed": false
+    },
+    {
+      "id": "13",
+      "title": "Event Handling: clicks, inputs, submit",
+      "completed": false
+    },
+    {
+      "id": "14",
+      "title": "Project: build a responsive landing page",
+      "completed": false
+    },
+    {
+      "id": "9e55",
+      "title": "test",
+      "completed": false
+    },
+    {
+      "id": "e08d",
+      "title": "djjddj",
+      "completed": false
+    },
+    {
+      "id": "19a2",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "f314",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "fb3c",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "16ad",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "83cb",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "9eff",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "0d22",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "753a",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "9565",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "ae82",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "d7e5",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "414b",
+      "title": "gbotos80@yahoo.ro",
+      "completed": false
+    },
+    {
+      "id": "7139",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "34c3",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "05e0",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "da85",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "edb0",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "6be5",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "c832",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "b735",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "99c8",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "b74d",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "1155",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "e8ba",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "d51e",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "8081",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "adf3",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "7bd1",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "b865",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "0d41",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "ec4c",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "f67e",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "688a",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "c9d7",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "73ea",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "729e",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "c6cc",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "9a8c",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "fa57",
+      "title": "george10",
+      "completed": false,
+      "type": "user"
+    },
+    {
+      "id": "a247",
+      "title": "George Botos",
+      "completed": false,
+      "type": "user"
+    },
+    {
+      "id": "491b",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "ef41",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "15ee",
+      "title": "George Botos",
+      "completed": false,
+      "type": "user"
+    },
+    {
+      "id": "4ccb",
+      "title": "George Botos",
+      "completed": false,
+      "type": "user"
+    },
+    {
+      "id": "4f31",
+      "title": "George Botos",
+      "completed": false,
+      "type": "user"
+    },
+    {
+      "id": "e92d",
+      "title": "George Botos",
+      "completed": false,
+      "type": "user"
+    },
+    {
+      "id": "a5fd",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "28ed",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "296b",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "16ef",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "519c",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "60df",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "e992",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "1f22",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "0f85",
+      "title": "george10",
+      "completed": false
+    },
+    {
+      "id": "be07",
+      "title": "George Botos",
+      "completed": false
+    },
+    {
+      "id": "2aa0",
+      "title": "gbotos80@yahoo.ro",
+      "completed": false
+    }
+  ]
+}

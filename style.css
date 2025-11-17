@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app{
+    background-color: rgb(83, 85, 85);
+    border-radius: 10px;
+    width: 500px;
+    height: 700px;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+    margin: auto 0;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.section {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.label-item{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#username{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.item-list{
+
+    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+ 
+}
+.item-list li {
+    display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 5px 20px;
+  font-weight: 700; 
+     
+}
+
+.item-list li:hover{
+    background-color: lightgrey;
+    color: black;
+    transition: 0.5s;
+}
+
+.btn{
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+
+    background-color: grey;
+    transition: 0.5s;
+    color: black;
+}
+
+.remove-item{
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    color: red;
+    cursor: pointer;
+}
+
+.remove-item:hover{
+
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
+
+.clear-item{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: darkred;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.clear-item:hover{
+    background-color: rgb(78, 12, 12);
+    transition: 0.5s;
+    color: white;
+}
