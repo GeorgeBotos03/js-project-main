@@ -4,23 +4,23 @@ const itemInput = document.getElementById('username')
 const listElement = document.getElementById('item-list')
 const clearBtn = document.getElementById('clear-item');
 
-function renderList(todos) {
-  listElement.innerHTML = todos.map(t => `
-    <li data-id="${t.id}">
-      ${t.title}
-      <button class="remove-item" title="Remove">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </li>
-  `).join('');
-  checkUI();
-}
+// function renderList(todos) {
+//   listElement.innerHTML = todos.map(t => `
+//     <li data-id="${t.id}">
+//       ${t.title}
+//       <button class="remove-item" title="Remove">
+//         <i class="fa-solid fa-xmark"></i>
+//       </button>
+//     </li>
+//   `).join('');
+//   checkUI();
+// }
 
 
 async function fetchingData() {
     const response = await fetch(API);
     const todos = await response.json();
-    renderList(todos);
+    fetchingData(todos);
 };
 
 
@@ -32,16 +32,16 @@ async function addItem(e){
         return;
     }
 
-    const data = { title: newItem, completed: false,};
-    const res = await fetch(API, {
-        method: 'POST',
-        headers: {'Content-type': 'application/json'},
-        body: JSON.stringify(data)
-    });
-    if(!res.ok){
-        alert('Eroare');
-        return;
-  }
+//     const data = { title: newItem, completed: false,};
+//     const res = await fetch(API, {
+//         method: 'POST',
+//         headers: {'Content-type': 'application/json'},
+//         body: JSON.stringify(data)
+//     });
+//     if(!res.ok){
+//         alert('Eroare');
+//         return;
+//   }
 
     
     
@@ -81,16 +81,16 @@ async function removeItem(e){
     if(confirm('Are you sure?')){
       
       const li = e.target.parentElement.parentElement;
-      const id = li.dataset.id;
+    //   const id = li.dataset.id;
 
      
-      if (id) {
-        const res = await fetch(`${API}/${id}`, { method: 'DELETE' });
-        if(!res.ok){
-          alert('Eroare la ștergere din server!');
-          return;
-        }
-      }
+    //   if (id) {
+    //     const res = await fetch(`${API}/${id}`, { method: 'DELETE' });
+    //     if(!res.ok){
+    //       alert('Eroare la ștergere din server!');
+    //       return;
+    //     }
+    //   }
 
      
       li.remove();
@@ -121,5 +121,5 @@ itemForm.addEventListener('submit', addItem);
 listElement.addEventListener('click', removeItem);
 clearBtn.addEventListener('click', clearItems);
 
-// fetchingData();
+fetchingData();
 checkUI();
