@@ -38,36 +38,36 @@ async function addItem(e){
     }
 
     const data = { title: newItem, completed: false,};
-    const res = await fetch(API, {
-        method: 'POST',
-        headers: {'Content-type': 'application/json'},
-        body: JSON.stringify(data)
-    });
-    if(!res.ok){
-        alert('Eroare');
-        return;
-  } 
-    const todo = await res.json();
-
     try {
+        const res = await fetch(API, {
+            method: 'POST',
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify(data)
+        });
+        if(!res.ok){
+            throw new Error('Error');
+        
+      } 
+        const todo = await res.json();
+    
+        
+        
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(todo))
+    
+        const button = createButton ('remove-item')
+        li.appendChild(button);
+    
+        listElement.appendChild(li);
+    
+        
+        checkUI();
+        itemInput.value = '';
+      
         
     } catch (error) {
-        
+        console.log(error)
     }
-    
-    
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(todo))
-
-    const button = createButton ('remove-item')
-    li.appendChild(button);
-
-    listElement.appendChild(li);
-
-    
-    checkUI();
-    itemInput.value = '';
-  
 
 };
 
@@ -88,26 +88,33 @@ function createIcon(classes) {
 
 async function removeItem(e){
   
-  if(e.target.parentElement.classList.contains('remove-item')) {
-    if(confirm('Are you sure?')){
-      
-      const li = e.target.parentElement.parentElement;
-      const id = li.dataset.id;
-
-     
-      if (id) {
-        const res = await fetch(`${API}/${id}`, { method: 'DELETE' });
-        if(!res.ok){
-          alert('Eroare la ștergere din server!');
-          return;
+    
+    try {
+     if(e.target.parentElement.classList.contains('remove-item')) {
+      if(confirm('Are you sure?')){
+        
+        const li = e.target.parentElement.parentElement;
+        const id = li.dataset.id;
+  
+       
+        if (id) {
+          const res = await fetch(`${API}/${id}`, { method: 'DELETE' });
+          if(!res.ok){
+            alert('Error deleting from server!');
+            return;
+          }
         }
+  
+       
+        li.remove();
+        checkUI();
       }
-
-     
-      li.remove();
-      checkUI();
     }
-  }
+    
+    } catch (error) {
+    console.log(error);
+    }
+
 }
 
 
