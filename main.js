@@ -8,6 +8,9 @@ function renderList(todos) {
   listElement.innerHTML = todos.map(t => `
     <li data-id="${t.id}">
       ${t.title}
+      <button class="edit-item" title="Edit" >
+        <i class="fa-solid fa-pen"></i>
+        </button>
       <button class="remove-item" title="Remove">
         <i class="fa-solid fa-xmark"></i>
       </button>
@@ -88,7 +91,6 @@ function createIcon(classes) {
 
 async function removeItem(e){
   
-    
     try {
      if(e.target.parentElement.classList.contains('remove-item')) {
       if(confirm('Are you sure?')){
@@ -117,6 +119,32 @@ async function removeItem(e){
 
 }
 
+async function editItem(e){
+    if(e.target.closest('.edit-item')){
+        const li = e.target.closest('li')
+        const id = li.dataset.id
+        const currentTitle = li.querySelector('.title');
+        const newTitle = prompt('Edit task:', currentTitle);
+         if(newTitle === '') return;
+
+         try{
+            const res = await fetch(`${API}/${id}`, {
+                method: 'PATCH',
+                headers:{'Content-Type': 'application/json'},
+                body: JSON.stringify({ title: newTitle.trim() })
+            })
+
+            if(!res.ok) {
+                throw new Error('Server error');
+            }
+            li.querySelector('.title').textContent = newTitle.trim();
+         }catch(error){
+            console.log(error);
+
+         };
+    };
+}
+
 
 function clearItems(){
     if(confirm('Are you sure?')){
@@ -138,6 +166,7 @@ function checkUI(){
 itemForm.addEventListener('submit', addItem);
 listElement.addEventListener('click', removeItem);
 clearBtn.addEventListener('click', clearItems);
+listElement.addEventListener('click',editItem);
 
 fetchingData();
 checkUI();
